@@ -69,3 +69,117 @@ import { slugify } from "@codevachon/utilities";
 
 const mySlug = slugify("Hello World!"); // => `hello-world`
 ```
+
+### doesKeyExists
+
+Returns if a `Key` exists on an Object
+
+```ts
+import { doesKeyExists } from "@codevachon/utilities";
+
+if (doesKeyExists({ foo: "bar" }, "foo")) {
+    console.log("key exists on object");
+}
+```
+
+### sortObjectArrayByKey
+
+Returns an Array of Objects sorted by Key
+
+```ts
+import { sortObjectArrayByKey } from "@codevachon/utilities";
+
+const sortedArray = sortObjectArrayByKey([{ a: 5 }, { a: 10 }, { a: 1 }], "a");
+// sortedArray = [{a: 1},{a: 5},{a: 10}]
+```
+
+### capitalize
+
+Returns the string in capitalize case
+
+```ts
+import { capitalize } from "@codevachon/utilities";
+
+const str = capitalize("banana tree");
+// str = "Banana tree"
+```
+
+### camelCase
+
+Returns the string in camelCase case
+
+```ts
+import { camelCase } from "@codevachon/utilities";
+
+const str = camelCase("banana tree");
+// str = "bananaTree"
+```
+
+### pascalCase
+
+Returns the string in pascalCase case
+
+```ts
+import { pascalCase } from "@codevachon/utilities";
+
+const str = pascalCase("banana tree");
+// str = "BananaTree"
+```
+
+### uppercase
+
+Returns the string in upper case
+
+```ts
+import { uppercase } from "@codevachon/utilities";
+
+const str = uppercase("banana tree");
+// str = "BANANA TREE"
+```
+
+### lowercase
+
+Returns the string in lowercase case
+
+```ts
+import { lowercase } from "@codevachon/utilities";
+
+const str = lowercase("banana tree");
+// str = "banana tree"
+```
+
+### startsWith
+
+Returns the string if starts with a value
+
+```ts
+import { startsWith } from "@codevachon/utilities";
+
+if (startsWith("banana tree", "ban")) {
+    console.log("string starts with ban");
+}
+```
+
+### endsWith
+
+Returns the string if ends with a value
+
+```ts
+import { endsWith } from "@codevachon/utilities";
+
+if (endsWith("banana tree", "ban")) {
+    console.log("string ends with ban");
+}
+```
+
+### contains
+
+Returns the string if contains a value
+
+```ts
+import { contains } from "@codevachon/utilities";
+
+if (contains("banana tree", "ban")) {
+    console.log("string contains with ban");
+}
+```
