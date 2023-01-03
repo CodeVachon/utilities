@@ -183,3 +183,16 @@ if (contains("banana tree", "ban")) {
     console.log("string contains with ban");
 }
 ```
+
+### invariant
+
+throws an error if the condition is not truthy
+
+```ts
+import { invariant } from "@codevachon/utilities";
+
+(request: Request, response: Response, next: NextFunction) => {
+    invariant(request?.headers?.token, "Expected token to be found on headers");
+    // an error is thrown if request.headers.token is not defined
+};
+```
