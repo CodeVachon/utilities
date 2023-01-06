@@ -196,3 +196,69 @@ import { invariant } from "@codevachon/utilities";
     // an error is thrown if request.headers.token is not defined
 };
 ```
+
+### randomInt
+
+Generates a random integer with Math.random()
+
+```ts
+import { randomInt } from "@codevachon/utilities";
+
+const value = randomInt(1, 10);
+// value => random number from 1 to 10
+```
+
+### randomValueFromArray
+
+Returns a Random index from the provided Array
+
+```ts
+import { randomValueFromArray } from "@codevachon/utilities";
+
+const value = randomValueFromArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// value => random index from array
+```
+
+### randomizeArray
+
+Returns a new array with the indexes in a randomized order
+
+```ts
+import { randomizeArray } from "@codevachon/utilities";
+
+const value = randomizeArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// value => new array with values in random order
+```
+
+### asArray
+
+returns the provided value an array of values
+
+```ts
+import { asArray } from "@codevachon/utilities";
+
+const value = asArray("a");
+// value => ["a"]
+```
+
+### range
+
+returns an Array of numbers with with indexes from start to finish
+
+```ts
+import { range } from "@codevachon/utilities";
+
+const value = range(1, 10);
+// value => [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
+### rangeAlpha
+
+returns an Array of characters with with indexes from start to finish
+
+```ts
+import { rangeAlpha } from "@codevachon/utilities";
+
+const value = rangeAlpha("a", "g");
+// value => ["a", "b", "c", "d", "e", "f", "g"]
+```
